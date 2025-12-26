@@ -1,0 +1,114 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Verdana', sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+header {
+	padding: 10px;
+	display: flex;
+	align-items: center;
+}
+
+.p {
+	padding: 0 20%;
+}
+
+.gerb {
+	width: 350px;
+	float: left; 
+	margin-right: 50px;
+}
+
+h1, h2 {
+	font-family: 'Montserrat', 'Gogh', 'Verdana';
+	font-weight: 700;
+	color: #404040ff;
+}
+h2.white {
+	color: white;
+}
+
+.dobro, .istorija {
+	/* margin: 0 -520px; */
+	height: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-position: center;
+	background-size: cover; 
+}
+.dobro div, .istorija div {
+	padding: 10px;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+.dobro {
+	background-image: url("veteranov.webp");
+}
+.istorija {
+	background-image: url("zdanija.jpg");
+}
+
+.menu {
+	list-style: none;
+  	text-align: center;
+}
+
+.menu li {display: inline-block;}
+.menu a {
+	text-decoration: none;
+	font-family: 'Montserrat', 'Gogh', 'Verdana';
+	font-weight: 700;
+	margin-right: 30px;
+	display: inline-block;
+	color: #404040ff;
+	transition: .8s;
+}
+.menu a:hover {
+	color: gray;
+	transition: .8s;
+}
+
+.kontakty, .o_gorode, .novosti {
+	padding-left: 10px;
+}
+
+.o_gorode {
+	display: flex;
+    /* justify-content: space-between; */
+    gap: 20px;
+}
+.o_gorode .foto {
+	flex-grow: 1;
+}
+
+.kontakt {
+	padding: 10px 30px;
+	background-color: #F0F0F0;
+	border-radius: 10px;
+}
+
+.imgi {
+	display: flex;
+    /* justify-content: space-between; */
+    gap: 20px;
+}
+.imgi .img {
+	flex-grow: 1;
+}
+
+.s {
+	text-decoration: none;
+	color: black;
+}
+
+.podval {
+	padding: 10px;
+	background-color: #404040ff;
+	color: white;
+	margin: 20px 0px 0px 0px;
+}
