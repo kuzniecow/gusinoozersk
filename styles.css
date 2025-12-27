@@ -34,6 +34,11 @@ h1, h2 {
 h2.white {
 	color: white;
 }
+@media (max-width:469px) {
+	h1, h2 {
+		font-size: 18pt;
+	}
+}
 
 .dobro, .istorija, .karta {
 	/* margin: 0 -520px; */
@@ -96,6 +101,7 @@ h2.white {
 	.o_gorode .yandex, .o_gorode .foto {
     	display: flex;
     	justify-content: center;
+    	overflow: hidden;
 	}
 }
 @media (max-width:1000px) {
@@ -110,14 +116,30 @@ h2.white {
 	border-radius: 10px;
 }
 
-.imgi {
-	display: flex;
-    /* justify-content: space-between; */
-    gap: 20px;
+@media (min-width:2300px) {
+	.imgi {
+		display: flex;
+	    /* justify-content: space-between; */
+	    gap: 20px;
+	}
+	.imgi .img {
+		flex-grow: 1;
+	}
+	.imgi .img img {
+		height: 200px;
+	}
 }
-.imgi .img {
-	flex-grow: 1;
+@media (max-width:2299px) {
+	.imgi .img {
+		display: flex;
+		justify-content: center;
+	}
+	.imgi .img img {
+		width: 100%;
+		height: auto;
+	}
 }
+
 
 .s {
 	text-decoration: none;
