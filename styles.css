@@ -8,10 +8,12 @@ body {
 	margin: 0;
 }
 
-header {
-	padding: 10px;
-	display: flex;
-	align-items: center;
+@media (min-width:1001px) {
+	header {
+		padding: 10px;
+		display: flex;
+		align-items: center;
+	}
 }
 
 .p {
@@ -80,13 +82,26 @@ h2.white {
 	padding-left: 10px;
 }
 
-.o_gorode {
-	display: flex;
-    /* justify-content: space-between; */
-    gap: 20px;
+@media (min-width:2000px) {
+	.o_gorode {
+		display: flex;
+    	/* justify-content: space-between; */
+    	gap: 20px;
+	}
+	.o_gorode .foto {
+		flex-grow: 1;
+	}
 }
-.o_gorode .foto {
-	flex-grow: 1;
+@media (max-width:1999px) {
+	.o_gorode .yandex, .o_gorode .foto {
+    	display: flex;
+    	justify-content: center;
+	}
+}
+@media (max-width:1000px) {
+	.p {
+    	padding: 1%;
+	}
 }
 
 .kontakt {
@@ -130,6 +145,11 @@ h2.white {
     position: relative;
     flex: 3;
     min-height: 500px;
+}
+@media (max-width:1000px) {
+	.map {
+    	min-height: 100px;
+	}
 }
 
 .map-image {
