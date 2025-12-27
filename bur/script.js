@@ -233,11 +233,12 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Если клик был не по точке и не внутри панели информации
         if (!isPointClick && !e.target.closest('.info-panel')) {
-            infoContent.innerHTML = '<p>Нажмите на точку на карте</p>';
+            infoContent.innerHTML = '<p>Карта дээрэхи нэгэ точко дээрэ дараха</p>';
             document.querySelectorAll('.map-point').forEach(p => {
                 p.classList.remove('active');
             });
             activePoint = null;
         }
     });
+
 });
