@@ -9,12 +9,12 @@ body {
 }
 
 @media (min-width:1001px) {
-	header {
-		padding: 10px;
+header {
 		display: flex;
 		align-items: center;
 	}
 }
+header {padding: 10px}
 
 .p {
 	padding: 0 20%;
@@ -22,8 +22,16 @@ body {
 
 .gerb {
 	width: 350px;
-	float: left; 
+	float: left;
 	margin-right: 50px;
+}
+
+@media (max-width:650px) {
+.hh1 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 }
 
 h1, h2 {
@@ -106,7 +114,8 @@ h2.white {
 }
 @media (max-width:1000px) {
 	.p {
-    	padding: 1%;
+    	padding: 3%;
+    	padding-right: 5%;
 	}
 }
 
@@ -245,4 +254,74 @@ h2.white {
         border-left: none;
         border-top: 1px solid #ddd;
     }
+}
+
+/* Для мобильных устройств */
+@media (max-width: 768px) {
+    .map-container {
+        flex-direction: column;
+        height: 70vh;
+    }
+    
+    .map {
+        width: 100%;
+        height: 70%;
+    }
+    
+    .info-panel {
+        width: 100%;
+        height: 30%;
+        overflow-y: auto;
+    }
+    
+    .phones {
+        display: block;
+        text-align: center;
+        padding: 10px;
+        background: #ffeb3b;
+        color: #333;
+        font-weight: bold;
+    }
+}
+
+/* Для десктопов */
+@media (min-width: 769px) {
+    .phones {
+        display: none;
+    }
+}
+
+/* Стили для Leaflet карты */
+#interactive-map {
+    height: 600px;
+    width: 100%;
+    z-index: 1;
+}
+
+.map-point-leaflet {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+    font-size: 14px;
+    transition: transform 0.2s;
+}
+
+.map-point-leaflet:hover {
+    transform: scale(1.2);
+}
+
+.leaflet-control-attribution a {
+    display: none !important;
+}
+
+.leaflet-control-attribution:before {
+    content: "Leaflet";
 }
