@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Гусиноозёрск — сайт | Интерактивна карта</title>
     <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 </head>
 <body>
     <div class="p">
     <header>
-      <a href="index.html"><img class="gerb" src="logo.png"></a>
-      <h2>Хотын албан ёһоной бэшэ сайт</h2>
+      <a href="index.html" class="hh1"><img class="gerb" src="logo.png"></a>
+      <h2 align="center">Хотын албан ёһоной бэшэ сайт</h2>
     </header>
     <div>
       <ul class="menu">
@@ -19,7 +21,7 @@
         <li><a href="novosti.html"><i>Һонин*</i></a></li>
         <li><a href="index.html#kontakty">Харилсаа холбоо</a></li>
         <li><a href="karta.html">Карта</a></li>
-        <li><a href="https://admingus.gosuslugi.ru/">Захиргаан→</a></li>
+        <li><a href="https://admingus.gosuslugi.ru/">Захиргаан</a></li>
         <li><a href="../ru/karta.html">Русский</a></li>
       </ul>
     </div>
@@ -29,10 +31,12 @@
         <div>Интерактивна хотын карта</div>
       </h2>
     </div>
-    <div class="p"><h1>Һонирхолтой газарнуудай карта</h1></div>
+    <div class="p"><h1>Һонирхолтой газарнуудай карта</h1>
+    <div class="phones">Карта мобильна хэрэгсэлнүүдтэ тааруулагдаагүй.</div></div>
     <div class="map-container">
-        <!-- Карта -->
-        <div class="map"><img src="map.png" alt="Карта" class="map-image"></div>
+    <!-- Карта -->
+    <div class="map" id="interactive-map">
+        </div>
         <div class="info-panel">
             <h2>Һонирхолтой газарнууд</h2>
             <div class="info-content">
@@ -47,5 +51,4 @@
     </div>
     <script src="script.js"></script>
 </body>
-
 </html>
