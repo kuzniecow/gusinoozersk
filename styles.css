@@ -23,9 +23,12 @@ header {padding: 10px}
 .gerb {
 	width: 350px;
 	float: left;
-	margin-right: 50px;
 }
-
+@media (min-width:651px) {
+	.gerb {
+		margin-right: 50px;
+	}
+}
 @media (max-width:650px) {
 .hh1 {
 	display: flex;
@@ -325,3 +328,4 @@ h2.white {
 .leaflet-control-attribution:before {
     content: "Leaflet";
 }
+
