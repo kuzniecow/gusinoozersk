@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Гусиноозёрск — сайт | Интерактивная карта</title>
     <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 </head>
 <body>
     <div class="p">
     <header>
-      <a href="index.html"><img class="gerb" src="logo.png"></a>
-      <h2>Неофициальный сайт города</h2>
+      <a href="index.html" class="hh1"><img class="gerb" src="logo.png"></a>
+      <h2 align="center">Неофициальный сайт города</h2>
     </header>
     <div>
       <ul class="menu">
@@ -29,15 +31,12 @@
         <div>Интерактивная карта города</div>
       </h2>
     </div>
-    <div class="p"><h1>Карта достопримечательностей</h1></div>
+    <div class="p"><h1>Карта достопримечательностей</h1>
+    <div class="phones">Карта не адаптирована под мобильные устройства.</div></div>
     <div class="map-container">
-        <!-- Карта -->
-        <div class="map">
-            <img src="map.png" alt="Карта" class="map-image">
-            <!-- Точки будут добавлены автоматически -->
+    <!-- Карта -->
+    <div class="map" id="interactive-map">
         </div>
-        
-        <!-- Панель информации -->
         <div class="info-panel">
             <h2>Достопримечательности</h2>
             <div class="info-content">
