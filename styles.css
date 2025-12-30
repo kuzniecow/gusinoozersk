@@ -264,18 +264,24 @@ h2.white {
 @media (max-width: 768px) {
     .map-container {
         flex-direction: column;
-        height: 70vh;
+        height: auto;
+        min-height: 100vh;
     }
     
     .map {
-        width: 100%;
-        height: 70%;
+        min-height: 50vh;
     }
     
     .info-panel {
-        width: 100%;
-        height: 30%;
+        border-left: none;
+        border-top: 1px solid #ddd;
+        max-height: 50vh;
         overflow-y: auto;
+        min-height: 200px;
+    }
+
+    .info-content {
+        min-height: auto;
     }
     
     .phones {
@@ -329,5 +335,3 @@ h2.white {
 .leaflet-control-attribution:before {
     content: "Leaflet";
 }
-
-
