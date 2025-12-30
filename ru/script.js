@@ -277,17 +277,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    function initMobileFeatures() {
-        if (window.innerWidth <= 768) {
-            L.control.zoom({
-                position: 'bottomright'
-            }).addTo(map);
-            
-            map.setZoom(13);
-        }
-    }
-    
-    initMobileFeatures();
-    
     window.addEventListener('resize', initMobileFeatures);
 });
+
