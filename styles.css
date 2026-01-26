@@ -66,13 +66,13 @@ h2.white {
 	background-color: rgba(0, 0, 0, 0.3);
 }
 .dobro {
-	background-image: url("veteranov.webp");
+	background-image: url("photos/veteranov.webp");
 }
 .istorija {
-	background-image: url("zdanija.jpg");
+	background-image: url("photos/zdanija.jpg");
 }
 .karta {
-	background-image: url("gorod.webp");
+	background-image: url("photos/gorod.webp");
 }
 
 .menu {
@@ -86,6 +86,8 @@ h2.white {
 	font-family: 'Montserrat', 'Gogh', 'Verdana';
 	font-weight: 700;
 	margin-right: 30px;
+	margin-top: 15px;
+	margin-bottom: 15px;
 	display: inline-block;
 	color: #404040ff;
 	transition: .8s;
@@ -335,3 +337,4 @@ h2.white {
 .leaflet-control-attribution:before {
     content: "Leaflet";
 }
+
